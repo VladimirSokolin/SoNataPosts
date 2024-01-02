@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <TextView
+      android:text="@string/Input_category"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:id="@+id/tv_pick_category"
+      android:padding="5dp"
+      android:textStyle="bold"
+      android:layout_marginStart="10dp"
+      android:textSize="20dp"
+      app:layout_constraintEnd_toStartOf="@+id/iv_pick_category"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/iv_pick_category"
+      app:layout_constraintTop_toTopOf="@+id/iv_pick_category" />
+
+  <FrameLayout
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:id="@+id/iv_pick_category"
+      android:padding="10dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="10dp">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:id="@+id/iv_icon_category" />
+
+  </FrameLayout>
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textMultiLine"
+      android:layout_margin="10dp"
+      android:hint="@string/input_content"
+      android:ems="10"
+      android:id="@+id/editTextText"
+      app:layout_constraintTop_toBottomOf="@+id/tv_pick_category"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <Button
+      android:text="@string/ready"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:id="@+id/button"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintTop_toBottomOf="@+id/frame_layout_recording_microfone" />
+
+  <TextView
+      android:text="Сделать фото"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/tv_create_picture"
+      android:visibility="gone"
+      app:layout_constraintStart_toStartOf="@+id/iv_todo_picture"
+      app:layout_constraintEnd_toEndOf="@+id/iv_todo_picture"
+      app:layout_constraintTop_toBottomOf="@+id/iv_todo_picture"
+      android:layout_marginTop="8dp"
+      app:layout_constraintHorizontal_bias="1.0" />
+
+  <ImageView
+      android:layout_width="86dp"
+      android:layout_height="64dp"
+      app:srcCompat="@android:drawable/ic_menu_camera"
+      android:id="@+id/iv_todo_picture"
+      android:visibility="gone"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextText"
+      android:layout_marginTop="20dp"
+      app:layout_constraintHorizontal_bias="0.498" />
+
+  <FrameLayout
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:background="@drawable/shape_circul"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextText"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:id="@+id/frame_layout_recording_microfone" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/microfone_white" />
+
+
+  </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

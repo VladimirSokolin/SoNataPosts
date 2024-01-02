@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+  <item
+      android:id="@+id/menu_bottom_navigation_bt_day"
+      android:title="@string/menu_day"
+      android:icon="@drawable/day"/>
+  <item
+      android:id="@+id/menu_bottom_navigation_bt_calendar"
+      android:title="@string/menu_calendar"
+      android:icon="@drawable/calendar"/>
+  <item
+      android:id="@+id/menu_bottom_navigation_bt_print"
+      android:title="Печать"
+      android:icon="@drawable/item_print"/>
+</menu>

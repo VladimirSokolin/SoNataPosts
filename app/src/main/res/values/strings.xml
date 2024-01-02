@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">SoNata Posts</string>
+  <string name="menu_day">День</string>
+  <string name="menu_calendar">Календарь</string>
+  <string name="long_text">One of the main principles of SQL databases is the schema: a formal declaration of how the database is organized. The schema is reflected in the SQL statements that you use to create your database. You may find it helpful to create a companion class, known as a contract class, which explicitly specifies the layout of your schema in a systematic and self-documenting way. A contract class is a container for constants that define names for URIs, tables, and columns. The contract class allows you to use the same constants across all the other classes in the same package. This lets you change a column name in one place and have it propagate throughout your code. A good way to organize a contract class is to put definitions that are global to your whole database in the root level of the class. Then create an inner class for each table. Each inner class enumerates the corresponding table\'s columns.</string>
+  <string name="Input_note">Нажмите, чтобы ввести заметку</string>
+  <string name="input_content">Введите вашу заметку</string>
+  <string name="Input_category">Выбрать категорию:</string>
+  <string name="ready">Готово</string>
+  <string name="Search">Поиск</string>
+  <string name="sort_category">По категориям</string>
+  <string name="tv_scoreboard_search">Поиск по категориям</string>
+  <string name="create_resourse">Создать категорию</string>
+  <string name="pick_color">Выбрать цвет</string>
+  <string name="input_name_category">Название категории</string>
+  <string name="bt_create_category">Создать</string>
+</resources>

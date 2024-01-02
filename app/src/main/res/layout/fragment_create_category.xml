@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      android:hint="@string/input_name_category"
+      android:ems="10"
+      android:id="@+id/et_create_category"
+      app:layout_constraintStart_toStartOf="@+id/iv_create_category"
+      app:layout_constraintEnd_toEndOf="@+id/iv_create_category"
+      app:layout_constraintTop_toBottomOf="@+id/iv_create_category"
+      android:layout_marginTop="20dp" />
+
+  <ImageView
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      app:srcCompat="@drawable/img"
+      android:id="@+id/iv_create_category"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="36dp"
+      app:layout_constraintHorizontal_bias="0.498" />
+
+  <TextView
+      android:text="@string/pick_color"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="24sp"
+      android:gravity="center"
+      android:padding="10dp"
+      android:id="@+id/tv_create_category_color"
+      android:background="@drawable/shape_item_note"
+      app:layout_constraintStart_toStartOf="@+id/et_create_category"
+      app:layout_constraintEnd_toEndOf="@+id/et_create_category"
+      app:layout_constraintHorizontal_bias="0.539"
+      app:layout_constraintTop_toBottomOf="@+id/et_create_category"
+      android:layout_marginTop="24dp" />
+
+  <Button
+      android:text="@string/bt_create_category"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/bt_create_category"
+      app:layout_constraintStart_toStartOf="@+id/tv_create_category_color"
+      app:layout_constraintEnd_toEndOf="@+id/tv_create_category_color"
+      app:layout_constraintTop_toBottomOf="@+id/tv_create_category_color"
+      android:layout_marginTop="28dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

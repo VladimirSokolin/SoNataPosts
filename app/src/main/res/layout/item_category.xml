@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_fragment_category"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@android:color/transparent"
+      android:id="@+id/item_category_tv_color"
+      app:layout_constraintEnd_toStartOf="@+id/item_category_iv_icon"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/item_category_iv_icon" />
+
+  <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/image_view_tv_title"
+      android:padding="5dp"
+      android:lines="1"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:ellipsize="end"
+      app:layout_constraintEnd_toStartOf="@+id/item_category_iv_icon"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/item_category_iv_icon"
+      app:layout_constraintTop_toTopOf="@+id/item_category_iv_icon" />
+
+  <ImageView
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:padding="10dp"
+      android:background="@android:color/transparent"
+      app:srcCompat="@drawable/img"
+      android:id="@+id/item_category_iv_icon"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
